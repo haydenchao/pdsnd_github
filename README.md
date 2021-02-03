@@ -18,6 +18,12 @@ Three of the dataset contains the below 6 columns.
   - End Station (e.g., Sedgwick St & North Ave)
   - User Type (Subscriber or Customer)
 
+## Usage
+After downloading the project file (py.file), open your terminal and go to the file location.
+Simply run 'python bikeshare.py', and then just answer the questions provided by the program will give you the answer that you are looking for.
+
+At the end of the program, you are able to view the raw data if you want. 
+
 
 ### Files used
 chicago.csv
