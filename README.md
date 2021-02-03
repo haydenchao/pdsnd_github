@@ -1,15 +1,16 @@
 ### Date created
-Include the date you created this project and README file.
+03/02/2021
 
 ### Project Title
-Replace the Project Title
+bikeshare system - python
 
 ### Description
-Describe what your project is about and what it does
+This program shows you the statistics of the most popular 3 stations in US.
 
 ### Files used
-Include the files used
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
