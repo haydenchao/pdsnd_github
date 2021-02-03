@@ -15,14 +15,22 @@ def month_name(num):
     return m_name[num - 1]
 
 def print_error(value):
-    #function to print error value to reduce repetitive code
+    """
+    function to print error value to reduce repetitive code. The purpose is
+    to inform the user their input was incorrect, during the get_filters func.
+
+    Args:
+    value = city_name/ day/ month
+
+    """
     print("-- Your input is incorrect: [ {} ]. Please try again! --".format(value))
 
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
 
-    Users are able to exit the program if 'exit' keyword is input
+    Users are able to exit the program if 'exit' keyword is input.
+    Return a error message for incorrect input and will exit the loop only when the input is valid
 
     Returns:
         (str) city - name of the city to analyze
