@@ -227,15 +227,15 @@ def user_stats(df):
         print("\nThis took %s seconds." % (time.time() - start_time))
         print('-'*40)
 
-def display_more_data(df):
+def display_more_raw_data(df):
     """
     Display data 5 lines of raw data at a time, continue display when user type yes
 
     """
     df = df.drop(['Month', 'Day_of_Week', 'hour'], axis=1)
     sn = 0 #slice_num
-    more_data = input("Would you like to see some raw data? Type \'yes\' to continue\n")
-    while more_data.lower() == 'yes':
+    more_raw_data = input("Would you like to see some raw data? Type \'yes\' to continue, or alternatively any key to exit\n ")
+    while more_raw_data.lower() == 'yes':
         df_slice = df.iloc[sn: sn + 5]
         df_dict = df_slice.to_dict('index')
         print(df_dict)
@@ -245,7 +245,7 @@ def display_more_data(df):
                 print("\'{}\': \'{}\' ".format(key, row[key]))
 
         sn += 5
-        more_data = input("\nWould you like to see some raw data? Type \'yes\' to continue\n")
+        more_raw_data = input("\nWould you like to see some raw data? Type \'yes\' to continue, or alternatively any key to exit\n")
 
 
 def main():
@@ -263,7 +263,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-        display_more_data(df)
+        display_more_raw_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
