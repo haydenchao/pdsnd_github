@@ -11,8 +11,9 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 MONTHS = ['january','february', 'march', 'april', 'may', 'june']
 
 def month_name(num):
-    m_name = ['january','february', 'march', 'april', 'may', 'june']
-    return m_name[num - 1]
+    mon_name = ['january','february', 'march', 'april', 'may', 'june']
+    return mon_name[num - 1]
+    
 
 def print_error(value):
     """
@@ -181,7 +182,6 @@ def trip_duration_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-
 
 def user_stats(df):
     """
